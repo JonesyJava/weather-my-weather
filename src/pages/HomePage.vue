@@ -1,16 +1,22 @@
 <template>
-  <div
-    class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center"
-  ></div>
-  <div>
-    <div class="row">
-      <div class="col-2">
-        <h6>{{ state }}</h6>
+  <div class="home flex-grow-1 d-flex flex-column">
+    <div>
+      <div class="row mt-5">
+        <div class="col-4 card" v-if="state.weather.current">
+          <div class="">
+            <h2>CURRENT</h2>
+            <h3>{{ state.weather.timezone }}</h3>
+            <h3>{{ state.weather.current.weather[0].icon }}</h3>
+            <h6>Feels Like: {{ state.weather.current.feels_like }}</h6>
+            <h6>Humidity: {{ state.weather.current.humidity }}%</h6>
+            <h6>Cloud Coverage: {{ state.weather.current.clouds }}%</h6>
+            <h6>UV Index: {{ state.weather.current.uvi }}</h6>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
       </div>
-      <div class="col-2"></div>
-      <div class="col-2"></div>
-      <div class="col-2"></div>
-      <div class="col-2"></div>
     </div>
   </div>
 </template>
