@@ -2,8 +2,14 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
-        <img alt="logo" src="../assets/img/cw-logo.png" height="45" />
+        <img
+          alt="logo"
+          src="https://images-na.ssl-images-amazon.com/images/I/61nuuPxUvaL.png"
+          height="45"
+        />
       </div>
+      <h4 class="ml-3 text-info">Weather The Weather</h4>
+      <h6 class="ml-1 text-info">®</h6>
     </router-link>
     <button
       class="navbar-toggler"
