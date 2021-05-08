@@ -1,5 +1,5 @@
 <template>
-  <div class="home flex-grow-1 d-flex flex-column">
+  <div class="home flex-grow-1 d-flex flex-column container-fluid">
     <div>
       <div class="row justify-content-center mt-5">
         <h1 class="wthr-font">CURRENT</h1>
