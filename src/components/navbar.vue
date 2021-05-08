@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
         <img
@@ -8,8 +8,8 @@
           height="45"
         />
       </div>
-      <h4 class="ml-3 text-info">Weather The Weather</h4>
-      <h6 class="ml-1 text-info">®</h6>
+      <h4 class="ml-3 text-primary">Weather The Weather</h4>
+      <h6 class="ml-1 text-primary">®</h6>
     </router-link>
     <button
       class="navbar-toggler"

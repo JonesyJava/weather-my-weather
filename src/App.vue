@@ -6,8 +6,13 @@
     <router-view />
   </main>
   <footer>
-    <div class="bg-dark text-light text-center p-4">
-      Made with 💖 by CodeWorks
+    <div class="bg-light text-dark text-center p-4">
+      Brought To You By
+      <img
+        src="https://raw.githubusercontent.com/bugsounet/MMM-Weather/master/logo.png"
+        alt=""
+        height="45"
+      />
     </div>
   </footer>
 </template>
@@ -26,5 +31,4 @@ export default {
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
-
 </style>
