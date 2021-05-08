@@ -2,7 +2,7 @@
   <div class="home flex-grow-1 d-flex flex-column">
     <div>
       <div class="row justify-content-center mt-5">
-        <h2>CURRENT</h2>
+        <h1 class="wthr-font">CURRENT</h1>
       </div>
       <div class="row mt-5 justify-content-around">
         <div class="col-6 card" v-if="state.weather.current">
@@ -33,10 +33,12 @@
       </div>
     </div>
     <div class="row justify-content-center text-center mt-5">
-      <div><h1>5-Day Forecast</h1></div>
+      <div>
+        <h2 class="wthr-font">5-Day Forecast</h2>
+      </div>
     </div>
     <div
-      class="row mt-5 justify-content-around text-center"
+      class="row mt-3 justify-content-around text-center"
       v-if="state.weather.daily"
     >
       <div class="col-2 card">
@@ -187,5 +189,8 @@ export default {
     height: 200px;
     width: 200px;
   }
+}
+.wthr-font {
+  font-family: "Cinzel", serif;
 }
 </style>

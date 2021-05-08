@@ -6,7 +6,7 @@
     <router-view />
   </main>
   <footer>
-    <div class="bg-light text-dark text-center p-4">
+    <div class="bg-light text-dark text-center p-2">
       Brought To You By
       <img
         src="https://raw.githubusercontent.com/bugsounet/MMM-Weather/master/logo.png"
