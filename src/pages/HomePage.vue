@@ -38,7 +38,7 @@
       </div>
     </div>
     <div
-      class="row mt-3 justify-content-around text-center"
+      class="row my-3 justify-content-around text-center"
       v-if="state.weather.daily"
     >
       <div class="col-2 card">
