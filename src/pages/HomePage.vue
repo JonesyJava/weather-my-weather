@@ -163,9 +163,6 @@ import { AppState } from '../AppState'
 export default {
   name: 'Home',
   setup() {
-    // const { icon } = data.weather[0]
-    // locationIcon = document.querySelector('.weather-icon')
-    // locationIcon.innerHTML = `<img src="icons/${icon}.png">`
     const route = useRoute()
     const state = reactive({
       weather: computed(() => AppState.weather)
