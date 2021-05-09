@@ -8,20 +8,11 @@
           height="45"
         />
       </div>
-      <h4 class="ml-3 text-light wthr-font pt-2">Weather The Weather</h4>
+      <h4 class="ml-3 text-light wthr-font pt-2 nav-title">
+        Weather The Weather
+      </h4>
       <h6 class="ml-1 text-light">®</h6>
     </router-link>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarText"
-      aria-controls="navbarText"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon" />
-    </button>
   </nav>
 </template>
 
@@ -76,5 +67,10 @@ a:hover {
 }
 .wthr-font {
   font-family: "Cinzel", serif;
+}
+@media screen {
+  .nav-title {
+    font-size: 21px;
+  }
 }
 </style>

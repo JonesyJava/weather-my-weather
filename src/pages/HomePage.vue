@@ -5,7 +5,10 @@
         <h1 class="wthr-font text-white">CURRENT</h1>
       </div>
       <div class="row mt-3 justify-content-around">
-        <div class="col-2 card text-white" v-if="state.weather.current">
+        <div
+          class="col-md-2 col-sm-4 card text-white"
+          v-if="state.weather.current"
+        >
           <h3 class="wthr-font">
             {{ state.weather.timezone }}
           </h3>
@@ -43,7 +46,7 @@
       class="row my-3 justify-content-around text-center text-white"
       v-if="state.weather.daily"
     >
-      <div class="col-2 card">
+      <div class="col-md-2 col-sm-1 card">
         <h4>{{ state.weather.daily[0].weather[0].main }}</h4>
         <img
           v-if="state.weather.daily[0].weather[0].main == 'Clear'"
@@ -65,7 +68,7 @@
         <h6>Evening: {{ state.weather.daily[0].feels_like.eve }}&#176; F</h6>
         <h6>Night: {{ state.weather.daily[0].feels_like.night }}&#176; F</h6>
       </div>
-      <div class="col-2 card">
+      <div class="col-md-2 col-sm-1 card">
         <h4>{{ state.weather.daily[1].weather[0].main }}</h4>
         <img
           v-if="state.weather.daily[1].weather[0].main == 'Clear'"
@@ -87,7 +90,7 @@
         <h6>Evening: {{ state.weather.daily[1].feels_like.eve }}&#176; F</h6>
         <h6>Night: {{ state.weather.daily[1].feels_like.night }}&#176; F</h6>
       </div>
-      <div class="col-2 card">
+      <div class="col-md-2 col-sm-1 card">
         <h4>{{ state.weather.daily[2].weather[0].main }}</h4>
         <img
           v-if="state.weather.daily[2].weather[0].main == 'Clear'"
@@ -109,7 +112,7 @@
         <h6>Evening: {{ state.weather.daily[2].feels_like.eve }}&#176; F</h6>
         <h6>Night: {{ state.weather.daily[2].feels_like.night }}&#176; F</h6>
       </div>
-      <div class="col-2 card">
+      <div class="col-md-2 col-sm-1 card">
         <h4>{{ state.weather.daily[3].weather[0].main }}</h4>
         <img
           v-if="state.weather.daily[3].weather[0].main == 'Clear'"
@@ -131,7 +134,7 @@
         <h6>Evening: {{ state.weather.daily[3].feels_like.eve }}&#176; F</h6>
         <h6>Night: {{ state.weather.daily[3].feels_like.night }}&#176; F</h6>
       </div>
-      <div class="col-2 card">
+      <div class="col-md-2 col-sm-1 card">
         <h4>{{ state.weather.daily[4].weather[0].main }}</h4>
         <img
           v-if="state.weather.daily[4].weather[0].main == 'Clear'"
@@ -201,5 +204,12 @@ export default {
   background-color: rgba(245, 245, 245, 0.192);
   -webkit-backdrop-filter: blur(10px) !important;
   border-radius: 10%;
+}
+@media screen {
+  .card {
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 </style>
