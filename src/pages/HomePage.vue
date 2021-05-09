@@ -1,14 +1,16 @@
 <template>
-  <div class="home flex-grow-1 d-flex flex-column container-fluid">
-    <div>
-      <div class="row justify-content-center mt-5">
-        <h1 class="wthr-font">CURRENT</h1>
+  <div class="home flex-grow-1 d-flex flex-column container-fluid bg">
+    <div class="wrap">
+      <div class="row justify-content-center mt-3">
+        <h1 class="wthr-font text-white">CURRENT</h1>
       </div>
-      <div class="row mt-5 justify-content-around">
-        <div class="col-6 card" v-if="state.weather.current">
-          <div class="">
-            <h3>{{ state.weather.timezone }}</h3>
-            <h3>{{ state.weather.current.weather[0].main }}</h3>
+      <div class="row mt-3 justify-content-around">
+        <div class="col-2 card text-white" v-if="state.weather.current">
+          <h3 class="wthr-font">
+            {{ state.weather.timezone }}
+          </h3>
+          <h3>{{ state.weather.current.weather[0].main }}</h3>
+          <div>
             <img
               v-if="state.weather.current.weather[0].main == 'Clear'"
               src="../assets/img/01d.png"
@@ -34,11 +36,11 @@
     </div>
     <div class="row justify-content-center text-center mt-5">
       <div>
-        <h2 class="wthr-font">5-Day Forecast</h2>
+        <h2 class="wthr-font text-white">5-Day Forecast</h2>
       </div>
     </div>
     <div
-      class="row my-3 justify-content-around text-center"
+      class="row my-3 justify-content-around text-center text-white"
       v-if="state.weather.daily"
     >
       <div class="col-2 card">
@@ -189,5 +191,15 @@ export default {
 }
 .wthr-font {
   font-family: "Cinzel", serif;
+}
+.bg {
+  background-image: url("https://greatloveart.com/wp-content/uploads/2021/01/4k-Artistic-Nature-Background-Laptop-Wallpapers.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.card {
+  background-color: rgba(245, 245, 245, 0.192);
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-radius: 10%;
 }
 </style>
