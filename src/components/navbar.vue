@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
         <img
@@ -8,8 +8,8 @@
           height="45"
         />
       </div>
-      <h4 class="ml-3 text-primary">Weather The Weather</h4>
-      <h6 class="ml-1 text-primary">®</h6>
+      <h4 class="ml-3 text-light wthr-font pt-2">Weather The Weather</h4>
+      <h6 class="ml-1 text-light">®</h6>
     </router-link>
     <button
       class="navbar-toggler"
@@ -70,5 +70,11 @@ a:hover {
 }
 .nav-item .nav-link.router-link-exact-active {
   color: var(--primary);
+}
+.bg {
+  background-color: rgba(144, 48, 235, 0.658);
+}
+.wthr-font {
+  font-family: "Cinzel", serif;
 }
 </style>
