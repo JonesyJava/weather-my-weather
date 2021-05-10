@@ -6,7 +6,7 @@
       </div>
       <div class="row mt-3 justify-content-around">
         <div
-          class="col-md-2 col-sm-4 card text-white"
+          class="col-md-3 col-sm-4 card text-white"
           v-if="state.weather.current"
         >
           <h3 class="wthr-font">
@@ -37,13 +37,13 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-center text-center mt-5">
+    <div class="row justify-content-center text-center mt-3">
       <div>
         <h2 class="wthr-font text-white">5-Day Forecast</h2>
       </div>
     </div>
     <div
-      class="row my-3 justify-content-around text-center text-white"
+      class="row justify-content-around text-center text-white"
       v-if="state.weather.daily"
     >
       <div class="col-md-2 col-sm-1 card">
@@ -208,8 +208,8 @@ export default {
 @media screen {
   .card {
     margin-top: 15px;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 </style>
